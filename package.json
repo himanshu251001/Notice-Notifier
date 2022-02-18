@@ -1,0 +1,15 @@
+{
+    "name": "notice_notifier",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index1.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "",
+    "dependencies": {
+      "puppeteer": "^13.0.1"
+    }
+  }
