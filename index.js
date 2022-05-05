@@ -11,14 +11,12 @@ const puppeteer = require("puppeteer");
     const elements = document.getElementsByClassName("BlogList-item-title");
     return Array.from(elements).map((element) => element.innerText);
   });
-  const hrefs1 = await page.evaluate(
-    () => Array.from(
-      document.querySelectorAll('a[href]'),
-      a => a.getAttribute('href')
-    )
-  );
+  const hrefs1 = await page.evaluate(() => 
+  { elements = document.getElementsByClassName("BlogList-item-title");
+  return Array.from(elements).map((element) => element.href);
+});
   var JsonLinks = JSON.stringify(hrefs1);
-// console.log(JsonLinks);
+//console.log(JsonLinks);
  
   var JsonNotice = JSON.stringify(notice);
  //console.log(JsonNotice);
